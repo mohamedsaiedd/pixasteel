@@ -316,11 +316,11 @@ h1 {
   height: 100%;
   width: 0;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 199999; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  background-color: rgba(0,0,0, 0.7);
+      backdrop-filter: blur(7px);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -394,7 +394,7 @@ color:  #626262;
 
 .nav-item {
   margin-left: 50px;
-  font-weight: 700;
+  font-weight: 100;
 
 }
 
@@ -405,6 +405,12 @@ color:  #626262;
   transition: 0.4s ease-in-out;
  
 }
+.navbar-toggler{
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar-toggler:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
 
 /* home */
 
@@ -413,7 +419,28 @@ color:  #626262;
   left: 15px !important;
   top: 30%;
 }
+@media(max-width: 1000px) {
+  .home-p {
+    position: relative;
+    font-size: 30px !important;
+    text-align: left;
+    color: #eee !important;
+    font-family: 'Catamaran';
+  
+    font-weight: 500;
+  }
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/contemporary-building-with-glass-facade.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    
 
+    
+  }
+  .img-home {
+  visibility: hidden;
+  }
+}
 .home-p {
   position: relative;
   font-size: 40px;
@@ -462,15 +489,269 @@ font-weight: 700;
   width: 100%;
   height: 100%;
 }
-.card {
- 
-  
- 
-}
-.card:hover {
 
-}
+
 .content {
   margin: 20px ;
 }
 
+
+    .navbar {
+      background-color: rgba(0,0,0, 0.7);
+      backdrop-filter: blur(7px);
+      }
+      
+/* projects */
+
+#projects-section {
+  background-color: #fff;
+  padding-left: 14px;
+  padding-top: 20px;
+ 
+}
+@media (max-width:1000px) {
+  .p-projects-info {
+    font-size: 10px !important;
+    }
+
+    .projects {
+      display: block !important;
+    }
+}
+#projects-section h2 {
+  color: #626262 !important;
+  padding-top:15px ;
+  font-weight: 700;
+  }
+  .project-img {
+    position: relative;
+  }
+
+  .projects {
+    display: flex;
+  }
+  .col-lg-6 {
+    max-width: 2000px;
+  
+  }
+
+  .p-projects-info{
+    font-size: 40px !important; 
+  }
+
+  
+@media (max-width:1000px) {
+  .p-projects-info {
+    font-size: 20px !important;
+    }
+    .projects {
+      display: block !important;
+    }
+}
+
+@media (max-width:1400px) {
+  .p-projects-info {
+    font-size: 25px !important;
+    }
+
+}
+
+.warning {
+  border-radius: 30px;
+  background: #c69500;
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+
+a {
+    text-decoration: none;
+}
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+ 
+}
+
+.cards {
+  height: 540px;
+  background-color: rgba(19, 19, 19,0.5);
+  backdrop-filter:blur(5px);
+ 
+}
+@media(min-width:1000px) {
+  .card-list {
+    overflow-x: hidden;
+  }
+
+  .cards {
+    height: 550px;
+    background-color: rgba(19, 19, 19,0.5);
+    backdrop-filter:blur(5px);
+   
+  }
+}
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+.card2 {
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+    background-image: url("../images/professional-industrial-welder-welding-metal-parts-metalworking-factory-min.jpg");
+  
+}
+
+.card2:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card2:hover {
+    transform: translateY(-1rem);
+}
+
+.card2:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+.card-header {
+    margin-bottom: auto;
+}
+
+.card-header p {
+    font-size: 14px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+}
+
+.card-header h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.card-header h2:hover {
+    background: linear-gradient(90deg,#ffffff,#000000);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.card-author {
+    margin: 3rem 0 0;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.author-avatar {
+    grid-area: auto;
+    align-self: start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.author-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    display: block;
+    overflow: hidden;
+    margin: 16px 10px;
+}
+
+.author-name {
+    grid-area: auto;
+    box-sizing: border-box;
+}
+
+.author-name-prefix {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+}
+
+.half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 48px;
+    fill: none;
+    stroke: #fdfcff00;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.tags {
+    margin: 1rem 0 2rem;
+    padding: .5rem 0 1rem;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+.tags a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: .5rem;
+    color: #7a7a8c;
+    text-transform: uppercase;
+    font-size: .66rem;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+    padding: .2rem .85rem .25rem;
+    position: relative;
+}
+
+.tags a:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    background-clip: text;
+    border-color: white;
+}
+
+.cards h2 {
+  padding-top: 20px;
+  color: #fff;
+}
