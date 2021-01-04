@@ -8,22 +8,18 @@
 	<meta name="keywords" content="pixa steel company">
 	<meta name="description" content="pixasteel company">
   <!-- stylesheets css -->
-
+  
   <link href="./css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/docs.theme.min.css">
+  
   <link rel="stylesheet" href="css/et-line-font.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="images/warehouse-old-construction-beams-country_1127-2786.jpg"/>
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <script src="js/jquery.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  <script src="./js/jquery.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 
@@ -64,8 +60,8 @@
 <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html"><span >PIXA</span> STEEL</a>
-    <button class="navbar-toggler" type="button">
-      <span class="navbar-toggler-icon"onclick="openNav()"><i class="fa fa-bars"></i></span>
+    <button class="navbar-toggler">
+      <span class="navbar-toggler-icon" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mb-2 navbar-items mb-lg-0">
@@ -86,15 +82,16 @@
         </li>
       </ul>
     </div>
+    
   </div>
 </nav>
 
 <!-- home section -->
-<section id="home" class="container">
+<section id="home">
 		<div class="row ">
 			<div class=" home-main-text col-lg-6">
 				<div class="home-thumb">
-          <p class="home-p">
+          <p class="home-p"  class="animate__animated animate__bounce">
           PIXA STEEL has delivered engineering,<br>
           project management and<br>
           site studies services<br>
@@ -111,7 +108,7 @@
 </section>
 
 <!-- services section -->
-<section id="services-section" >
+<!-- <section id="services-section" >
   <h2 class="wow fadeInUp whoh " data-wow-delay="0.4s">Services</h2>
       <div class=" columns">
         <div class="owl-carousel owl-theme">
@@ -369,7 +366,219 @@ in EGYPT.
                   </p>
                 </div>
           </div>
+</section> -->
+
+<section class="cards">
+<h2 class="wow fadeInUp whoh "   data-wow-delay="0.4s">Services</h2>
+<div class="card-list" data-aos="fade-right" data-aos-easing="new-easing" data-aos-delay="210">
+  <article class="card2" >
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Never forget</h2>
+    </header>
+
+    <div class="card-author"  >
+      <a class="author-avatar" href="#">
+        <img src="./images/low-angle-view-skyscrapers-min.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+
+      <div class="author-name">
+        <div class="author-name-prefix">Author</div>
+        Jeff Delaney
+      </div>
+    </div>
+  
+  </article>
+
+
+
+  <article class="card2" >
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Card Tricks are fun!</h2>
+    </header>
+    <div class="card-author">
+      <a class="author-avatar" href="#">
+        <img src="./images/contemporary-building-with-glass-facade.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+      <div class="author-name">
+        <div class="author-name-prefix">Pirate</div>
+        Zheng Zhilong
+      </div>
+    </div>
+  
+  </article>
+
+  <article class="card2" >
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Card Tricks are fun!</h2>
+    </header>
+
+    <div class="card-author">
+      <a class="author-avatar" href="#">
+        <img src="./images/low-angle-view-skyscrapers-min.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+
+      <div class="author-name">
+        <div class="author-name-prefix">Pirate</div>
+        Francis Drake
+      </div>
+    </div>
+   
+  </article>
+
+  <article class="card2">
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Card Tricks are fun!</h2>
+    </header>
+
+    <div class="card-author">
+      <a class="author-avatar" href="#">
+        <img src="./images/contemporary-building-with-glass-facade.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+
+      <div class="author-name">
+        <div class="author-name-prefix">Pirate</div>
+        Edward Teach
+      </div>
+    </div>
+   
+  </article>
+
+
+  <article class="card2">
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Card Tricks are fun!</h2>
+    </header>
+
+    <div class="card-author">
+      <a class="author-avatar" href="#">
+        <img src="./images/professional-industrial-welder-welding-metal-parts-metalworking-factory-min.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+
+      <div class="author-name">
+        <div class="author-name-prefix">Pirate</div>
+        William Kidd
+      </div>
+    </div>
+  
+  </article>
+
+  <article class="card2">
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Card Tricks are fun!</h2>
+    </header>
+
+    <div class="card-author">
+      <a class="author-avatar" href="#">
+        <img src="./images/low-angle-view-skyscrapers-min.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+
+      <div class="author-name">
+        <div class="author-name-prefix">Pirate</div>
+        William Kidd
+      </div>
+    </div>
+ 
+  </article>
+
+  <article class="card2">
+    <header class="card-header">
+      <p>Sep 11th 2020</p>
+      <h2>Card Tricks are fun!</h2>
+    </header>
+
+    <div class="card-author">
+      <a class="author-avatar" href="#">
+        <img src="./images/professional-industrial-welder-welding-metal-parts-metalworking-factory-min.jpg" />
+      </a>
+      <svg class="half-circle" viewBox="0 0 106 57">
+        <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+      </svg>
+
+      <div class="author-name">
+        <div class="author-name-prefix">Pirate</div>
+        William Kidd
+      </div>
+    </div>
+ 
+  </article>
+
+
+
+</div>
 </section>
+
+<section id="about" >
+  <div class="about-content container">
+    <div class="about-info">
+      <h2 data-aos="fade-in">About us</h2>
+      <p data-aos="zoom-in">
+        PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT.
+        PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT. PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT.<br><br> PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT.
+        PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT. PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT. PIXA STEEL has delivered engineering,
+        project management and
+        site studies services
+        in EGYPT.
+       </p>
+       
+    </div>
+    <div class="about-images ">
+      <img class="img1" data-aos="slide-right" src="images/contemporary-building-with-glass-facade.jpg">
+      <img class="img2" data-aos="slide-left" src="images/low-angle-view-skyscrapers-min.jpg">
+     <img class="img3" data-aos="slide-right" src="images/professional-industrial-welder-welding-metal-parts-metalworking-factory-min.jpg">
+      <img class="img4" data-aos="slide-left" src="images/warehouse-old-construction-beams-country_1127-2786.jpg">
+      <img class="img1" data-aos="slide-right" src="images/contemporary-building-with-glass-facade.jpg">
+      <img class="img3" data-aos="slide-left" src="images/low-angle-view-skyscrapers-min.jpg">
+      <img class="img4" data-aos="slide-right" src="images/construction-silhouette-min.jpg">
+      <img class="img5" data-aos="slide-left" src="images/male-worker-at-a-factory-min.jpg">
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 <!--
@@ -613,7 +822,10 @@ owl.on('mousewheel', '.owl-stage', function (e) {
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

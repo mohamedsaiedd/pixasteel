@@ -4,7 +4,7 @@
   "description": "pixa steel production ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "dependencies": {
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
+    "gulp-html": "^3.2.0",
     "gulp-sass": "^4.1.0",
     "gulp-scss": "^1.4.0",
     "gulp-uglify": "^3.0.2",
