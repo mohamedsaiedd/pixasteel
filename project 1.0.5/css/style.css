@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@500&family=Ubuntu:ital,wght@1,500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@500&family=Josefin+Sans:ital,wght@1,500&display=swap);
 body::-webkit-scrollbar {
-  width: 0.30rem;
+  width: 0.40rem;
 }
 body::-webkit-scrollbar-track {
   background-color: #626262;
@@ -10,10 +10,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgb(204, 132, 16) ;
 }
-html,body {
- 
-  overflow-x: hidden;
-}
+
 
 body
 	{
@@ -22,13 +19,17 @@ body
     font-family: 'Tajawal', sans-serif;
     font-weight: 400;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    cursor: none !important;
   
 	}
   
 html,body {
-  width: 100%;
+ 
   overflow-x: hidden;
+  left: 0;
+  right: 0;
 }
 
 html {
@@ -47,7 +48,8 @@ html {
 }
 
 .nav-link {
-  color:white
+  color:white;
+  cursor: none;
 }
 
 #home {
@@ -295,7 +297,9 @@ font-size: 20px;
 h1 {
   margin: 0px;
 }
-
+.img-home img:hover {
+  filter: invert(1);
+}
 .img-home img {
   position: fixed;
   right:0px !important;
@@ -304,7 +308,7 @@ h1 {
   height: 100vh !important;
   overflow: hidden;
   width: 50vw;
-  z-index: -2222;
+  z-index: -1;
   }
   .img-home img {
 
@@ -397,13 +401,13 @@ color:  #626262;
 .nav-item {
   margin-left: 50px;
   font-weight: 100;
+  
 
 }
 
-.nav-link:hover {
-  border-bottom: 1.6px solid #9b7c0e !important;
-  color: #d6af22 !important;
 
+.nav-link:hover {
+  color: #fff !important;
   transition: 0.4s ease-in-out;
  
 }
@@ -456,6 +460,7 @@ color:  #626262;
   font-family: 'Catamaran';
   color: #626262 ;
   font-weight: 700;
+  user-select: none;
 }
 
 .dicover-btn {
@@ -803,7 +808,7 @@ h2 {
 
 .img1:hover,.img2:hover,.img3:hover,.img5:hover,.img4:hover {
   transform: scale(1.02) !important;
-  filter: brightness(30%);
+ 
 
 
 }
@@ -842,44 +847,8 @@ img {
 }
 
 
-
-.about-images figure img {
-  -webkit-transition:opacity 0.26s ease-out;   
-  -moz-transition:opacity 0.26s ease-out;   
-  -ms-transition:opacity 0.26s ease-out;   
-  -o-transition:opacity 0.26s ease-out;   
-  transition:opacity 0.26s ease-out;
- 
-  
- 
-   
-}
-.about-images:hover img, .about-images:active img {
-  opacity:1;
- 
-}
-.about-images:hover img:hover, .about-images:active img:active   {
-  opacity:0.5;
- 
-}
-
-
-.hoverable {
-  visibility:hidden;
-  margin-top: -12em;
-  margin-left: 1em;
- 
-}
-
-.about-images > figure:hover > .hoverable {
-  visibility:visible;
-}
-
-
-
-
-
 /* footer section  */
+
 footer {
   background-image: linear-gradient(black, rgba(5, 5, 5, 0.52)), url(../images/male-worker-at-a-factory-min.jpg);
   background-size: cover;
@@ -906,8 +875,8 @@ footer a:hover {
 .footer-h {
   text-align: center !important;
   color:white;
-padding-top: 60px;
- margin: 0 auto;
+  padding-top: 60px;
+  margin: 0 auto;
 
 }
 
@@ -921,5 +890,47 @@ padding-top: 60px;
   font-weight: 900 !important;
 }
 
+/*cursor*/
+
+.cursor {
+  width:3rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50% , -50%);
+  z-index: 90000000;
+  background-color: #8d8d8d60;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+  transition-property: height ,width, backdrop-filter,  background-color;
+
+}
+.filter-images-mouseover {
+  width:10rem;
+  height: 10rem;
+  backdrop-filter: invert(1);
 
 
+}
+
+.filter-text-mouseover {
+  width:10rem;
+  height: 10rem;
+  z-index: 0;
+  background-color: #9b7c0e;
+
+}
+
+.filter-nav{
+  width:6rem;
+  height: 6rem;
+  background-color: #a17f0478;
+
+  
+ 
+}
+.about-info p {
+  z-index: 1;
+  cursor: none;
+}

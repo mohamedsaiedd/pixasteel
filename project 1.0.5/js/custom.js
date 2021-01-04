@@ -16,6 +16,49 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+// cursor
+
+let mouseCursor = document.querySelector(".cursor");
+let imagesHover = document.querySelectorAll(".about-images");
+let textHover = document.querySelector(".about-info-p");
+let homeImageHover = document.querySelector(".img-home");
+let navLinks = document.querySelectorAll(".navbar-nav li" );
+
+
+window.addEventListener("mousemove" , mouse);
+
+function mouse(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+imagesHover.forEach(imgg => {
+  imgg.addEventListener("mouseover" , () => {
+    mouseCursor.classList.add("filter-images-mouseover")
+  });
+  imgg.addEventListener("mouseout" , () => {
+    mouseCursor.classList.remove("filter-images-mouseover")
+  });
+})
+
+
+textHover.addEventListener("mouseover" , () => {
+  mouseCursor.classList.add("filter-text-mouseover")
+})
+textHover.addEventListener("mouseout" , () => {
+  mouseCursor.classList.remove("filter-text-mouseover")
+})
+
+navLinks.forEach(link => {
+link.addEventListener("mouseover" , () => {
+  mouseCursor.classList.add("filter-nav")
+})
+link.addEventListener("mouseout" , () => {
+  mouseCursor.classList.remove("filter-nav")
+});
+})
+
+
 
 //   /* Home Slideshow Vegas
 //   -----------------------------------------------*/
